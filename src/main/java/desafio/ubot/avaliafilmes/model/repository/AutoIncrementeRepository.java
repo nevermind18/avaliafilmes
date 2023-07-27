@@ -1,0 +1,1 @@
+package desafio.ubot.avaliafilmes.model.repository;import desafio.ubot.avaliafilmes.model.document.AutoIncremente;import org.springframework.data.mongodb.repository.ReactiveMongoRepository;import reactor.core.publisher.Mono;public interface AutoIncrementeRepository extends ReactiveMongoRepository<AutoIncremente,String> {    Mono<AutoIncremente> findByNome(String nome);}
